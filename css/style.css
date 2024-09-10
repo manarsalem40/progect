@@ -1,0 +1,955 @@
+/* 
+1-COMMON STYLES
+2-GENERAL STYLES
+3-SECTIONS
+  3.1 HEADER
+  3.2 HOME SECTION
+  3.3 WELCOME SECTION
+  3.4 PORTFOLID SECTION
+  3.5 OFFER SECTION
+  3.6 SERVICE SECTION
+  3.7 NUMBERS SECTION
+  3.8 PRICING SECTION
+  3.9 TESTIMONIAL SECTION
+  3.10 TEAM SECTION
+  3.11 racent SECTION
+  3.12 FOOTER SECTION
+*/
+/* 1- common styles/   ////////////////////////////////////////// */
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.hover-opacity{
+    transition: opacity 0.5;
+}
+.hover-opacity:hover{
+    opacity: 0.7;
+}
+
+/* general styles//////////////////////////////////////////// */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+a{
+    text-decoration: none;
+}
+.header{
+    text-align: center;
+}
+.underline-team{
+    width: 120px;
+    height: 3px;
+    background-color: rgb(43, 43, 126);
+    margin: auto;
+    margin-bottom: 20px;
+}
+  /* 3.1HEADER///////////////////////////////////////// //////////////////////////////////////////  */
+.header{ 
+    width: 100%;
+    height: 55px;
+    background-color: rgba(46, 80, 132, 0.7);
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+}
+    .logo{
+        width: 90px; 
+        height: 55px;
+        margin-left: 100px;
+        border-radius: 30px;
+        float: left;
+    }
+    .ul1{
+        list-style: none;
+        float: right;
+        margin-right: 100px;
+    }
+    .ul1 li {
+        display: inline;
+        margin:100px 30px 0px ;
+    }
+    .ul1 li a{
+        color: rgb(245, 246, 248);
+        text-decoration: none;
+        font-size: 18;
+        letter-spacing: 2px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        line-height: 55px;
+    }
+    .ul1 li a:hover{
+        color: rgba(250, 250, 251, 0.9);
+        text-decoration: none;
+        font-size: 20;
+        letter-spacing: 2px;
+        border: 5px solid rgb(78, 84, 109);
+        background-color: rgb(78, 84, 109);
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
+
+    /* home//////////////////////////////////////////////////////////////////////////////////// */
+    .div1{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/water\ filling.jpeg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    left: 0;
+    right: 0;
+}
+.h2{
+    color: #210e6d;
+    position: absolute;
+    z-index: 1;
+}
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(189, 237, 241,0.5);   
+}
+.parent{
+    width: 55%;
+    transform: translate(-50% ,-50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+}
+.h2front{
+    font-size: 55px;
+    color: #06405c;
+}
+.pfront{
+    color: #000;
+    padding:0 12px ;
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+.btn{
+    
+text-transform: capitalize;
+padding:15px 20px ;
+font-size: 18;
+border-radius: 4px;
+border: 0;
+
+}
+.btn:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+.btn2{
+    color: azure;
+    background-color: #3a2b78;
+margin-left: 10px;
+}
+/* /* WELCOME SECTION//////////////////////////////////////////////////////////////////// */
+.welcome{
+    width: 100%;
+    height: 100vh;
+}
+.welcome-title{
+    margin-top: 50px;
+}
+.hp{
+    text-transform: capitalize;
+    font-size: 35px;
+    font-weight: 100;
+    text-align: center;
+}
+.welcome-underline{
+    width: 100px;
+    height: 2px;
+    background-color: #210e6d;
+    margin: 15px 47%;
+}
+.container-welcome{
+    width: 80%;
+    height: 80%;
+    margin: auto;
+}
+.parent-welcome{
+    overflow: auto;
+}
+.team-welcome{
+    margin-top: 5%;
+    float: left;
+    width: 30%;
+    height: 70%;
+    text-align: center;
+    border: 1px solid grey;
+    position: relative;
+}
+.team-welcome::after {
+    position: absolute;
+    content: "";
+
+    width:0;
+    height: 0;
+
+    top: 0;
+    left: 0;
+
+    background-color:rgb(78, 84, 109);
+    opacity: 0;
+}
+.team-welcome:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity:1;
+    transition: 1s ;
+    z-index: -1;
+}
+.font-welcome{
+    color: #163558 ;
+}
+.team-welcome:hover .font-welcome{
+    color: aliceblue;
+    
+}
+
+.dd{
+    margin: 5%;
+}
+.welcome-icon{
+    padding: 50px;
+    font-size: 40px;
+    color: #4bb0ee;
+}
+
+.welcome-h2{
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+
+.pwl{
+    font-size: 20px;
+    padding:30px ;
+}
+.a-welcome{
+    font-size: 25px;
+    color:  #4bb0ee ;
+}
+/* ////OUR PROJECTS////////////////////////////////////////////////////////////////////////////////////// */
+.our-projects{
+    width: 100%;
+    height: 100vh;
+    background-color:rgb(241, 241, 244) ;
+}
+.project-title{
+    margin-top: 50px;
+    display: inline-block;
+    margin-left: 46%;
+}
+.hp{
+    text-transform: capitalize;
+    font-size: 35px;
+    font-weight: 100;
+    text-align: center;
+    margin: auto;
+}
+.PROJECT-underline{  
+    width: 100px;
+    height: 2px;
+    border: 2px solid  #210e6d ;
+    margin: 15px 20%;
+
+}
+.container-projects{
+    width: 85%;
+    height: 95%;
+    margin: auto;
+    
+}
+.parent-projects{
+    overflow: hidden;
+}
+.project-picture{
+    margin-top: 30px;
+    width: 30%;
+    height: 250px;
+    border: 1px solid none;
+    text-align: center;
+    position: relative;
+    float: inline-end;
+}
+.p-p{
+    margin: 15px 5% 0px;
+}
+.project-image{
+    width: 90%;
+    height: 90%;
+    top: 5%;
+    left: 5%;
+    position: absolute;
+    z-index: 1;
+}
+.project-overlay{
+position: absolute;
+visibility: hidden;
+width: 100%;
+height: 100%;
+text-align: center;
+padding: 30% 30%;
+z-index: 2;
+}
+.project-picture:hover .project-overlay{
+    visibility: visible;
+    background-color: rgba(0, 0, 0, 0.7); 
+}
+.ph{
+    margin-top: -50px;
+}
+.project-picture:hover .ph{
+    visibility: visible;
+    font-size: 16;
+    font-weight: 60;
+    letter-spacing: 1px;
+    color: rgb(30, 125, 249);
+
+}
+.project-picture:hover .pp{
+    visibility: visible;
+    font-size: 18;
+    color: white;
+    line-height: 50px;
+    letter-spacing: 2px;
+}
+.project-picture:hover .pi1{
+    visibility: visible;
+    background-color:  rgb(30, 125, 249) ;
+    font-size: 35;
+    margin-left: 3px;
+}
+.project-picture:hover .pi2{
+    visibility: visible;
+    background-color:  rgb(30, 125, 249) ;
+    font-size: 35;
+    margin-left: 3px;
+}
+/* offers/////////////////////////////////////////////////////////////////////////////////// */
+.offer{
+    width: 100%;
+    height: 100vh;
+}
+.offer-title{
+    margin-top: 50px;
+    display: inline-block;
+    margin-left: 46%;
+}
+.ot{
+    text-transform: capitalize;
+    font-size: 35px;
+    font-weight: 100;
+    color: rgb(48, 56, 124);
+    text-align: center;
+    margin: auto;
+}
+.offer-underline{  
+    width: 100px;
+    height: 2px;
+    border: 2px solid  #322660 ;
+    margin: 15px 20%;
+
+}
+.container-offers{
+    width: 85%;
+    height: 95%;
+    margin: auto;
+    
+}
+.parent-offers{
+    overflow: auto;
+}
+.offer-div{
+    margin-top: 30px;
+    width: 30%;
+    height: 250px;
+    border: 1px solid grey;
+    padding:60PX ;
+    text-align: center;
+    position: relative;
+    float: inline-end;
+}
+.odd{
+    margin: 30px 5% 0px;
+}
+.ohp{
+    overflow: hidden;
+    width:100%;
+    height: 70px;
+}
+.oi1{width: 50px;height: 50px; float: left; ;}
+.op1{width: 150px;height: 50px; margin-right: -10px;}
+
+.oi{
+    color: #6b9cd7;
+    font-size: 40;
+}
+.oh{
+    font-size: 24px;
+}
+.offer-div::after {
+    position: absolute;
+    content: "";
+
+    width:0;
+    height: 0;
+
+    top: 0;
+    left: 0;
+
+    background-color:rgb(78, 84, 109);
+    opacity: 0;
+}
+.offer-div:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity:1;
+    transition: 1s ;
+    z-index: -1;
+}
+.offer-div:hover .oh {
+    color: rgb(235, 241, 249);
+}
+.offer-div:hover .oi {
+    color: rgb(86, 161, 232);
+}
+.offer-div:hover .op{
+    color: aliceblue;
+}
+/* /why us//////////////////////////////////////////////////////////////////////////////////////////////////// */
+.why{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(241, 241, 244);
+}
+.title-w{
+    text-align: center;
+    margin-top: 15%;
+    display: inline-block;
+    margin-left: 10%;
+}
+.wh{
+    text-transform: capitalize;
+    font-size: 30px;
+    font-weight: 100;
+    text-align: center;
+    margin: auto;
+    color: #2d2062;
+}
+.w-underline{  
+    width: 100px;
+    height: 2px;
+    border: 2px solid  #210e6d ;
+    margin: 15px 25%;
+
+}
+.wcontainer{
+    width: 85%;
+    height: 95%;
+    margin: auto;
+    overflow: hidden;
+}
+.wparent1{
+    overflow: hidden;
+    width: 50%;
+    height: 80%;
+    float: left;
+}
+.wparent2{
+    float: left;
+    overflow: auto;
+    width: 50%;
+    height: 80%;
+}
+.wp2div{
+    width: 360px;
+    height: 350px;
+    border: 1px solid none;
+    margin:85px 130px;
+    background-color: white;
+}
+.wpimg{
+    width: 90%;   
+    height: 100%;
+    margin: 0 5%;
+}
+.wp2div2{
+    width: 200px;
+    height: 30px;
+    margin-top:-40px;
+    margin-left: 220px;
+    text-align: center;
+}
+.wp1ul{
+    display:  inline-block;
+}
+.wp2div2{
+    color: rgb(86, 124, 194);
+    font-size: 14;
+}
+.wpdi{
+    margin: 0 5%;
+}
+.wpdi:hover{
+    color: rgb(85, 102, 135) ;
+}
+.wpdi2:hover{
+    color: rgb(85, 102, 135) ;
+}
+.wpp1{
+    margin-top: 5%;
+    margin-left:10%;
+    font-size: 20px;
+}
+.wpp2{
+    width:50% ;
+    
+    margin-top: 5%;
+    margin-left:10%;
+}
+.correct{
+    display: inline;
+    font-size: 20px;
+}
+.wpp2i{
+    color: #0d56be;
+}
+.wpp2p{
+    color: rgb(64, 67, 73);
+}
+/* //background-img//////////////////////////////////////////////////////////////////////////////// */
+.background-img{
+    position: relative;
+}
+.background-img1{
+    width:100%;
+    height: 350px;
+    background-image:url(../images/water\ filling.jpeg);
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-attachment:fixed ;
+    position: absolute;
+    z-index: -2;
+}
+.background-overlay{
+    background-color:rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 350px;
+    text-align: center;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+.client{
+    color: aliceblue;
+    width: 100px;
+    height: 100px;
+    float: left;
+    margin-left: 200px;
+    margin-top: 100px;
+}
+.client1{
+    color: #6b9cd7;
+    font-size: 24;
+}
+.client2{
+    margin-top: 15px;
+}
+.client3{
+    font-size: 14px;
+}
+/* price table///////////////////////////////////////////////////////////////////////////////////////////////////// */
+.price{
+    width: 100%;
+    height: 100vh;
+}
+.price-title{
+    text-align: center;
+    margin-top: 30%;
+    margin-left: -10%;
+}
+.price-title-h2{
+    font-size: 40px;
+}
+.price-underline{  
+    width: 100px;
+    height: 2px;
+    border: 2px solid  #210e6d ;
+    margin: 20px 47%;
+}
+.price-container{
+    width: 80%;
+    height: 90%;
+    margin: auto;
+
+}
+.price-parent{
+    width: 100%;
+    height: 100%;
+    margin-top: 5%;
+    overflow: auto;
+}
+.table1{
+    width: 30%;
+    height: 65%;
+    background-color: rgb(250, 251, 253) ;
+    text-align: center;    
+    border: 1.5px solid   #6b9cd7 ;
+    float: left;
+    position: relative;
+}
+.table1::after {
+    position: absolute;
+    content: "";
+
+    width:100%;
+    height: 0;
+
+    top: 0;
+    left: 0;
+    background-color:rgba(0, 0, 0, 0.4);
+}
+.table1:hover::after{
+    width: 100%;
+    height: 100%;
+    transition: 1s ;
+
+}
+.table1:hover .title2{
+    color: #bf925c;
+    font-size: 20;
+}
+
+.title2{
+    width: 200px;
+    height: 30px;
+    margin: 15% 25% 5%;
+    font-size: 15px;
+    color:gray ;
+}
+.table1:hover .circle1{
+
+    color: #b7803d;
+    font-size: 18px;
+}
+.circle1{
+    width: 90px;
+    height: 90px;
+    border: 2px solid  #6b9cd7;
+    padding: 18px 10px 0;
+    font-size: 17px;
+    border-radius: 50%; 
+    margin:auto ;
+    text-align: center;
+}
+
+
+.p1,.p2,.p3{
+    margin-top: 5%;
+    font-size: 17;
+}
+.btn{
+    background-color:#6b9cd7 ;
+    font: 20px;
+    width: 200px;
+    height: 45px;
+    border: 1px solid gray ;
+    margin-top: 5%;
+}
+
+.pt{
+    margin: 0 5%;
+}
+/*background2 /////////////////////////////////////////////////////////////////////////////////////////// */
+.background2-img{
+    position: relative;
+}
+.background2-img1{
+    width:100%;
+    height: 350px;
+    background-image:url(../images/Gear\ Art.jpeg);
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-attachment:fixed ;
+    position: absolute;
+
+}
+.background2-overlayparent{
+    background-color:rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 350px;
+    text-align: center;
+    overflow: auto;
+    position: absolute;
+    position: relative;
+}
+.imgson{
+    width: 40%;height:70%;
+    padding-top: 10%;
+    color: #4bb0ee;
+    font-size: 18px;
+    overflow: hidden;
+    float: left;
+    position: absolute;
+    }
+.imgg{
+    width: 100px;
+    height: 80px;
+    border: 1px solid gray;
+    border-radius: 50%;
+    display: block;
+    float: left;
+    margin-left: 150px;
+}
+.hss{
+    color: white;
+}
+.imgss2{
+    width: 100px;height: 50px;
+    float: left;
+    margin:0 5%;
+}
+.pson{width: 50%;height: 30%;
+color:white ;
+position: absolute;
+bottom: 0;
+right: 0;
+}
+.imgson1{
+    width: 40%;height:70%;
+    margin-left: -40%;
+    padding-top: 10%;
+    color: #4bb0ee;
+    font-size: 18px;
+    overflow: hidden;
+    left: 90%;
+    top:0;
+    position: absolute;
+    
+
+}
+.pson1{
+    position: absolute;
+    bottom: 25%;
+    left: 15%;
+    color:white ;}
+    
+    /*team-1 ////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+    .team-1{
+        width: 100%;
+        height: 80vh;
+        background-color: rgb(240, 243, 246);
+    }
+    .divtitle{
+        text-align: center;
+        margin-top: 10%;
+        display: inline-block;
+        margin-left: 45%;
+        font-size: 30;
+    }
+    .underline-team{
+        margin-top: 5%;
+    }
+    .container-tem{
+        width: 80%;
+        margin: auto;
+    }
+    .parent-tem{
+        overflow: auto;
+        width: 100%;height: 100%;
+    }
+    .tem-A{
+        margin-top: 9%;
+        width: 30%;
+        float: left;
+        background-color: #f0f3f6;
+        text-align: center;
+        position: relative;
+    }
+    .tem-A:after{
+        position: absolute;
+        content: "";
+        width: 0;height: 0;
+        top:0;
+        left: 0;
+        background-color: #000;
+        opacity: 1;
+    }
+    .tem-A:hover::after{
+        width: 100%;
+        height: 100%;
+        opacity: 0.4;
+        transition: 1.5s;
+    }
+    .imgta{width: 230px;
+        height: 250px;
+        margin-left: 12px;
+    }
+    .bt{
+        margin: 9% 5%;
+    }
+    .tem-A-img{
+        width: 90%;
+        padding: 20px 40px;
+        text-align: center;
+        position: relative;
+        margin-left: 20px;
+    }
+    .tem-overlay a{
+        display: block;
+        color: white;
+        background-color: #6b9cd7;
+        width: 40px;height: 40px; 
+        margin-left: auto;
+    }
+    .tem-overlay a i{
+        line-height: 40px;
+    }
+    .tem-overlay{
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.6);
+        visibility: hidden;
+    }
+    .tem-A:hover .tem-overlay{
+        visibility: visible;
+    }
+    .tefoh{color: #2e2e2f;
+        text-transform: uppercase;
+        padding: 8px 0;
+    }
+    .tefop{
+        color: grey;
+    }
+    .tem-A:hover .tefoh{
+        color: #4f3f7f;
+    }
+    .tem-A:hover .tefop{
+        color: #0d56be;
+    }
+/* /before footer////////////////////////////////////////////////////////////////////////// */
+    .Racent{
+        width: 100%;
+        height: 100vh;
+    }
+    .racent-title{
+        margin-top: -50px;
+        text-align: center;
+    }
+    .h2racet-title{
+        font-size: 40px;
+        
+    }
+    .racent-underline{
+        width: 100px;
+        height: 2px;
+        border: 2px solid  #210e6d ;
+        margin: 20px 47%;
+    }
+    .Racent-container{
+        width: 80%;
+        margin: auto;
+    }
+    .Racent-parent{
+        width: 100%;
+        background-color: ghostwhite;
+        overflow: hidden;
+    }
+    .rra{ 
+        width: 30%;
+        height: 80%;
+        padding-left: 10px;
+        float: left;
+        position: relative;
+    }
+    .rra:after{
+        position: absolute;
+        content: "";
+        width: 100%;height: 0;
+        top:0;
+        left: 0;
+        background-color: #000;
+        opacity: 1;
+    }
+    .rra:hover::after{
+        width: 100%;
+        height: 100%;
+        opacity: 0.4;
+        transition: 1.5s;}
+    .rraimg{
+        height: 65%;
+    }
+    .rrmg{
+        width: 90%;
+        height:  90%;
+    }
+    .rrai   i{
+        display: inline;
+        color: #6b9cd7;
+        font-size:20;
+    }
+    .rraip{
+        display: inline;
+        margin:10px 50px 0 0;
+    }
+    .rra2{
+        margin: 30px 0;
+    }
+    .rr2{
+        margin: 0 5%;
+    }
+    .rraa{
+        font-size: 18px;
+        color: #66a8f2;
+        margin-top: 10px;
+    }
+    /*footer //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+    .footer{
+        width: 100%;
+        height: 250px;
+        background-color: rgb(95, 94, 94);
+        text-align: center;
+    }
+    .footer-img{
+        width: 70px;
+        height: 70px;
+        margin:50px auto 5px;
+        border-radius: 15px;
+    }
+    .footer-iconss i{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: #70a2dc;
+        color: white;
+        font-size: 20px;
+        display: inline-block;
+        line-height: 60px;
+        margin: 10px;
+    }
+    .pfooter{
+        color: white;
+        font-size: 13px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+
+
+
+    }
